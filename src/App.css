@@ -1,38 +1,79 @@
+body {
+  background: rgb(2,0,36);
+  background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(7,6,36,1) 25%, rgba(31,61,134,1) 100%);
+}
+
 .App {
+  display: flex;
+  min-height: 100vh;
   text-align: center;
 }
 
+.profile {
+  background-image: url("https://res.cloudinary.com/leesheppard/image/upload/v1606889208/photos/leesheppard-72.png");
+  background-repeat: no-repeat;
+  background-size: 300px;
+  position: absolute;
+  bottom: 0;
+  left: 40vw;
+  z-index: 10;
+  height: 225px;
+  width: 294px;
+}
+
 .App-logo {
-  height: 40vmin;
+  height: 20vmin;
   pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
+.hud {
+  background-image: url("https://res.cloudinary.com/leesheppard/image/upload/v1595988324/hud/hud_ring_inner.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 320px;
+  position: absolute;
+  left: -90px;
+  top: -120px;
+  width: 320px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .hud {
+    animation: hud-ring-spin infinite 20s linear;
+  }
+}
+
+@keyframes hud-ring-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
   }
+}
+
+.main {
+  color: #f1f1f1;
+  flex: 1;
+  font-size: calc(10px + 2vmin);
+  /* padding-top: 20vh; */
+  text-shadow: 1px 1px 1px #000;
+}
+
+.fab {
+  color: #f1f1f1;
+  margin: 20px;
+}
+
+.framer {
+  border: .5px solid rgb(2,0,36);
+  box-shadow: 0px -2px 16px -1px rgba(0,0,13,0.75);
+  -webkit-box-shadow: 0px -2px 16px -1px rgba(0,0,13,0.75);
+  -moz-box-shadow: 0px -2px 16px -1px rgba(0,0,13,0.75);
+  margin: 55px auto 50px;
+  width: 340px;
 }
