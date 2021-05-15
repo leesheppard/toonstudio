@@ -1,28 +1,35 @@
 body {
-  background: rgb(2,0,36);
-  background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(7,6,36,1) 25%, rgba(31,61,134,1) 100%);
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    180deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(7, 6, 36, 1) 25%,
+    rgba(31, 61, 134, 1) 100%
+  );
 }
 
 .App {
   display: flex;
   min-height: 100vh;
+  position: relative;
   text-align: center;
 }
 
 .profile {
   background-image: url("https://res.cloudinary.com/leesheppard/image/upload/v1606889208/photos/leesheppard-72.png");
   background-repeat: no-repeat;
-  background-size: 300px;
+  background-size: 380px;
   position: absolute;
   bottom: 0;
-  left: 40vw;
+  left: 38%;
   z-index: 10;
-  height: 225px;
-  width: 294px;
+  height: 280px;
+  width: 380px;
 }
 
 .App-logo {
   height: 20vmin;
+  margin: 50px auto;
   pointer-events: none;
 }
 
@@ -39,6 +46,17 @@ body {
   left: -90px;
   top: -120px;
   width: 320px;
+}
+
+.ausown {
+  background: url("https://res.cloudinary.com/leesheppard/image/upload/v1614164608/artwork/AO-logo-TOST.png")
+    no-repeat left top;
+  background-size: 150px;
+  height: 150px;
+  position: absolute;
+  top: -9px;
+  left: 12px;
+  width: 150px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -60,7 +78,6 @@ body {
   color: #f1f1f1;
   flex: 1;
   font-size: calc(10px + 2vmin);
-  /* padding-top: 20vh; */
   text-shadow: 1px 1px 1px #000;
 }
 
@@ -70,10 +87,104 @@ body {
 }
 
 .framer {
-  border: .5px solid rgb(2,0,36);
-  box-shadow: 0px -2px 16px -1px rgba(0,0,13,0.75);
-  -webkit-box-shadow: 0px -2px 16px -1px rgba(0,0,13,0.75);
-  -moz-box-shadow: 0px -2px 16px -1px rgba(0,0,13,0.75);
+  border: 0.5px solid rgb(2, 0, 36);
+  box-shadow: 0 -2px 16px -1px rgba(0, 0, 13, 0.75);
+  -webkit-box-shadow: 0 -2px 16px -1px rgba(0, 0, 13, 0.75);
+  -moz-box-shadow: 0 -2px 16px -1px rgba(0, 0, 13, 0.75);
   margin: 55px auto 50px;
   width: 340px;
+}
+
+.comics img {
+  transform: rotate(5deg);
+}
+
+.service {
+  display: flex;
+  min-height: 600px;
+  padding: 120px 80px;
+  text-align: left;
+}
+
+.service .images {
+  margin: auto 0;
+}
+
+.service h1 {
+  background: url("https://res.cloudinary.com/leesheppard/image/upload/v1611554635/artwork/background-sky-1.png")
+    10px 60px no-repeat;
+  background-size: 340px;
+  font-family: "Just Me Again Down Here", cursive;
+  font-size: 100px;
+}
+
+.service p {
+  margin-bottom: 40px;
+}
+
+.illustrations {
+  background-image: url("https://res.cloudinary.com/leesheppard/image/upload/v1591070174/Brooklyn_9_tf0mxj.jpg");
+  background-size: cover;
+}
+
+.cartoons {
+  z-index: -10;
+}
+
+.caricatures {
+  background-image: url("https://res.cloudinary.com/leesheppard/image/upload/v1591070174/Brooklyn_9_tf0mxj.jpg");
+  background-size: cover;
+}
+
+.testimonials {
+  background-color: #a52b7b;
+  height: 360px;
+  padding: 20px;
+  text-align: center;
+}
+
+.testimonials-einstein,
+.testimonials-dalai,
+.testimonials-tutu {
+  position: relative;
+  top: -130px;
+}
+
+.testimonials small {
+  color: #cf895b;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.testimonial-caricature,
+.testimonial-cartoon,
+.testimonial-illustration {
+  float: left;
+  width: 50%;
+}
+
+.testimonial-quote {
+  font-family: "Sedgwick Ave", cursive;
+  font-size: 50px;
+  text-align: left;
+}
+
+.testimonial-title {
+  color: rgba(250, 220, 240, 0.9);
+  font-family: Avenir, sans-serif;
+  font-size: 36px;
+  font-weight: 800;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+blockquote {
+  border-left: 10px solid rgba(250, 220, 240, 0.65);
+  padding: -0.5em 10px;
+  padding-left: 24px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+
+blockquote p {
+  display: inline;
 }

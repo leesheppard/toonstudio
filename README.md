@@ -1,6 +1,6 @@
 # TOONSTUDIO README
 
-## Getting started 
+## Getting started
 
 ### `npm start`
 
